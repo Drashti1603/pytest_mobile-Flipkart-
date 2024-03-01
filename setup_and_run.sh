@@ -11,5 +11,6 @@ python3 -m pip install robotframework-appiumlibrary
 # Print Python version and installed packages
 python3 --version
 pip3 list
+pip install pytest
 
 # Run the Robot Framework test suite specified in the requirements.txt file
