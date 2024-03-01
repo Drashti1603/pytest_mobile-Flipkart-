@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.8.10 on linux)" generated="2024-02-05T15:17:31.686817" rpa="false" schemaversion="5">
+<suite id="s1" name="Searching &amp; Filtering &amp; Selecting">
+<suite id="s1-s1" name="Searching" source="/home/drashti/Documents/Android_Automation/robot-files/flipkart/Test_Cases/Searching.robot">
+<test id="s1-s1-t1" name="Flipkart Webpage Search Validation" line="13">
+<kw name="Search Validation" owner="Search">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${AppiumServerURL}</arg>
+<arg>platformName=${PlatformName}</arg>
+<arg>deviceName=${DeviceName}</arg>
+<arg>appPackage=${AppPackage}</arg>
+<arg>appActivity=${AppActivity}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-02-05T15:17:31.862609" elapsed="13.747400"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-05T15:17:45.616122" level="INFO">Clicking element '//android.widget.TextView[@text="Skip"]'.</msg>
+<msg time="2024-02-05T15:17:47.427101" level="INFO">xpath criteria: //android.widget.TextView[@text="Skip"]</msg>
+<arg>${skip}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-05T15:17:45.610770" elapsed="1.816727"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-02-05T15:17:51.090512" level="INFO">xpath criteria: //android.widget.TextView[@text="Categories"]
+xpath criteria: //android.widget.TextView[@text="Categories"]</msg>
+<arg>${categories}</arg>
+<arg>timeout=50</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-02-05T15:17:47.428497" elapsed="3.662426"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-05T15:17:51.100514" level="INFO">Clicking element '//android.widget.TextView[@text="Categories"]'.</msg>
+<msg time="2024-02-05T15:17:52.520815" level="INFO">xpath criteria: //android.widget.TextView[@text="Categories"]</msg>
+<arg>${categories}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-05T15:17:51.092049" elapsed="1.428859"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-02-05T15:18:04.520454" level="INFO">xpath criteria: //android.widget.ImageView[@content-desc="Search"]
+xpath criteria: //android.widget.ImageView[@content-desc="Search"]
+xpath criteria: //android.widget.ImageView[@content-desc="Search"]
+xpath criteria: //android.widget.ImageView[@content-desc="Search"]
+xpath criteria: //android.widget.ImageView[@content-desc="Search"]
+xpath criteria: //android.widget.ImageView[@content-desc="Search"]
+xpath criteria: //android.widget.ImageView[@content-desc="Search"]
+xpath criteria: //android.widget.ImageView[@content-desc="Search"]
+xpath criteria: //android.widget.ImageView[@content-desc="Search"]
+xpath criteria: //android.widget.ImageView[@content-desc="Search"]
+xpath criteria: //android.widget.ImageView[@content-desc="Search"]
+xpath criteria: //android.widget.ImageView[@content-desc="Search"]
+xpath criteria: //android.widget.ImageView[@content-desc="Search"]
+xpath criteria: //android.widget.ImageView[@content-desc="Search"]
+xpath criteria: //android.widget.ImageView[@content-desc="Search"]
+xpath criteria: //android.widget.ImageView[@content-desc="Search"]
+xpath criteria: //android.widget.ImageView[@content-desc="Search"]
+xpath criteria: //android.widget.ImageView[@content-desc="Search"]
+xpath criteria: //android.widget.ImageView[@content-desc="Search"]
+xpath criteria: //android.widget.ImageView[@content-desc="Search"]
+xpath criteria: //android.widget.ImageView[@content-desc="Search"]
+xpath criteria: //android.widget.ImageView[@content-desc="Search"]
+xpath criteria: //android.widget.ImageView[@content-desc="Search"]
+xpath criteria: //android.widget.ImageView[@content-desc="Search"]
+xpath criteria: //android.widget.ImageView[@content-desc="Search"]</msg>
+<arg>${SearchButton}</arg>
+<arg>timeout=50</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-02-05T15:17:52.521117" elapsed="11.999491"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-05T15:18:04.523671" level="INFO">Clicking element '//android.widget.ImageView[@content-desc="Search"]'.</msg>
+<msg time="2024-02-05T15:18:05.356788" level="INFO">xpath criteria: //android.widget.ImageView[@content-desc="Search"]</msg>
+<arg>${SearchButton}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-05T15:18:04.520924" elapsed="0.836132"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-02-05T15:18:05.363378" level="INFO">Typing text 'shoes' into text field '//android.widget.EditText[@text="Search for products"]'</msg>
+<msg time="2024-02-05T15:18:07.492349" level="INFO">xpath criteria: //android.widget.EditText[@text="Search for products"]</msg>
+<arg>${SearchFieldLocator}</arg>
+<arg>shoes</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-02-05T15:18:05.357700" elapsed="2.135078"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-02-05T15:18:17.233550" level="INFO">xpath criteria: //android.widget.TextView[@text="shoes for women"]
+xpath criteria: //android.widget.TextView[@text="shoes for women"]
+xpath criteria: //android.widget.TextView[@text="shoes for women"]
+xpath criteria: //android.widget.TextView[@text="shoes for women"]
+xpath criteria: //android.widget.TextView[@text="shoes for women"]
+xpath criteria: //android.widget.TextView[@text="shoes for women"]
+xpath criteria: //android.widget.TextView[@text="shoes for women"]
+xpath criteria: //android.widget.TextView[@text="shoes for women"]
+xpath criteria: //android.widget.TextView[@text="shoes for women"]
+xpath criteria: //android.widget.TextView[@text="shoes for women"]
+xpath criteria: //android.widget.TextView[@text="shoes for women"]
+xpath criteria: //android.widget.TextView[@text="shoes for women"]
+xpath criteria: //android.widget.TextView[@text="shoes for women"]
+xpath criteria: //android.widget.TextView[@text="shoes for women"]
+xpath criteria: //android.widget.TextView[@text="shoes for women"]
+xpath criteria: //android.widget.TextView[@text="shoes for women"]
+xpath criteria: //android.widget.TextView[@text="shoes for women"]
+xpath criteria: //android.widget.TextView[@text="shoes for women"]
+xpath criteria: //android.widget.TextView[@text="shoes for women"]</msg>
+<arg>${SearchButton1}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-02-05T15:18:07.493495" elapsed="9.740493"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-05T15:18:17.245898" level="INFO">Clicking element '//android.widget.TextView[@text="shoes for women"]'.</msg>
+<msg time="2024-02-05T15:18:18.555262" level="INFO">xpath criteria: //android.widget.TextView[@text="shoes for women"]</msg>
+<arg>${SearchButton1}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-05T15:18:17.235042" elapsed="1.320623"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-05T15:18:18.562230" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.flipkart.android:id/not_now_button"]'.</msg>
+<msg time="2024-02-05T15:18:19.558053" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.flipkart.android:id/not_now_button"]</msg>
+<arg>${allow}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-05T15:18:18.556315" elapsed="1.001849"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2024-02-05T15:18:21.830141" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Output/Search.png"&gt;&lt;img src="../Output/Search.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>filename=/home/drashti/Documents/Android_Automation/robot-files/flipkart/Output/Search.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="PASS" start="2024-02-05T15:18:19.558445" elapsed="2.271895"/>
+</kw>
+<status status="PASS" start="2024-02-05T15:17:31.861716" elapsed="49.968794"/>
+</kw>
+<status status="PASS" start="2024-02-05T15:17:31.860920" elapsed="49.969962"/>
+</test>
+<doc>Tests to validate Flipkart mobile app</doc>
+<status status="PASS" start="2024-02-05T15:17:31.729763" elapsed="50.101985"/>
+</suite>
+<suite id="s1-s2" name="Filtering" source="/home/drashti/Documents/Android_Automation/robot-files/flipkart/Test_Cases/Filtering.robot">
+<test id="s1-s2-t1" name="Flipkart Webpage Filter Validation" line="12">
+<kw name="Apply Filters on Price and Brand" owner="Filters">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-02-05T15:18:22.872680" level="INFO">xpath criteria: //android.widget.TextView[@text="Brand"]</msg>
+<arg>${brand}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-02-05T15:18:21.845566" elapsed="1.027283"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-05T15:18:22.875308" level="INFO">Clicking element '//android.widget.TextView[@text="Brand"]'.</msg>
+<msg time="2024-02-05T15:18:23.836473" level="INFO">xpath criteria: //android.widget.TextView[@text="Brand"]</msg>
+<arg>${brand}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-05T15:18:22.873265" elapsed="0.963369"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-02-05T15:18:25.503772" level="INFO">xpath criteria: //android.widget.TextView[@text="ADIDAS"]
+xpath criteria: //android.widget.TextView[@text="ADIDAS"]</msg>
+<arg>${adidas}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-02-05T15:18:23.837049" elapsed="1.666992"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-05T15:18:25.515973" level="INFO">Clicking element '//android.widget.TextView[@text="ADIDAS"]'.</msg>
+<msg time="2024-02-05T15:18:25.918962" level="INFO">xpath criteria: //android.widget.TextView[@text="ADIDAS"]</msg>
+<arg>${adidas}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-05T15:18:25.504923" elapsed="0.414140"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-05T15:18:25.920853" level="INFO">Clicking element '//android.widget.TextView[@text="Apply"]'.</msg>
+<msg time="2024-02-05T15:18:26.604222" level="INFO">xpath criteria: //android.widget.TextView[@text="Apply"]</msg>
+<arg>${apply}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-05T15:18:25.919268" elapsed="0.685196"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2024-02-05T15:18:28.139463" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Output/Filter-app.png"&gt;&lt;img src="../Output/Filter-app.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>filename=/home/drashti/Documents/Android_Automation/robot-files/flipkart/Output/Filter-app.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="PASS" start="2024-02-05T15:18:26.605040" elapsed="1.534602"/>
+</kw>
+<status status="PASS" start="2024-02-05T15:18:21.844922" elapsed="6.294859"/>
+</kw>
+<status status="PASS" start="2024-02-05T15:18:21.843979" elapsed="6.296097"/>
+</test>
+<doc>Tests to validate Flipkart mobile app</doc>
+<status status="PASS" start="2024-02-05T15:18:21.832798" elapsed="6.307826"/>
+</suite>
+<suite id="s1-s3" name="Selecting" source="/home/drashti/Documents/Android_Automation/robot-files/flipkart/Test_Cases/Selecting.robot">
+<test id="s1-s3-t1" name="Flipkart Webpage Product Selection Validation" line="12">
+<kw name="Product Selection" owner="Selection">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-02-05T15:18:29.809056" level="INFO">xpath criteria: //android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]</msg>
+<arg>${Product}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-02-05T15:18:28.154174" elapsed="1.655058"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-05T15:18:29.812125" level="INFO">Clicking element '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]'.</msg>
+<msg time="2024-02-05T15:18:30.594618" level="INFO">xpath criteria: //android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]</msg>
+<arg>${Product}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-05T15:18:29.809601" elapsed="0.785150"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2024-02-05T15:18:32.261368" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Output/Selected.png"&gt;&lt;img src="../Output/Selected.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>filename=/home/drashti/Documents/Android_Automation/robot-files/flipkart/Output/Selected.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="PASS" start="2024-02-05T15:18:30.594961" elapsed="1.666583"/>
+</kw>
+<status status="PASS" start="2024-02-05T15:18:28.153615" elapsed="4.108067"/>
+</kw>
+<status status="PASS" start="2024-02-05T15:18:28.152765" elapsed="4.109238"/>
+</test>
+<doc>Tests to validate Flipkart mobile app</doc>
+<status status="PASS" start="2024-02-05T15:18:28.141660" elapsed="4.120839"/>
+</suite>
+<status status="PASS" start="2024-02-05T15:17:31.690580" elapsed="60.572940"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Searching &amp; Filtering &amp; Selecting">Searching &amp; Filtering &amp; Selecting</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Searching">Searching &amp; Filtering &amp; Selecting.Searching</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="Filtering">Searching &amp; Filtering &amp; Selecting.Filtering</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="Selecting">Searching &amp; Filtering &amp; Selecting.Selecting</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
