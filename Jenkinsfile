@@ -24,7 +24,7 @@ pipeline {
         stage('Run Robot Tests') {
             steps {
                 script {
-                    sh 'python3 /home/drashti/Documents/Android_Automation/robot-files/python/pytest/Tests/Mobile/test_Flipkart.py'
+                    sh 'pytest -s /home/drashti/Documents/Android_Automation/robot-files/python/pytest/Tests/Mobile/test_Flipkart.py'
                 }
             }
         }
