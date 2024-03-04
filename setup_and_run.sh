@@ -26,6 +26,7 @@ else
     exit 1
 fi
 nvm install node
+sudo apt install nodejs
 npm install -g appium
 
 # Run the Robot Framework test suite specified in the requirements.txt file
