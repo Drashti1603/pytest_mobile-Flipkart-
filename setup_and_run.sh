@@ -7,6 +7,7 @@ pwd
 # Install Robot Framework and Robot Framework AppiumLibrary
 python3 -m pip install robotframework
 python3 -m pip install robotframework-appiumlibrary
+npm cache clean --force
 
 # Print Python version and installed packages
 python3 --version
