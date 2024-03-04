@@ -25,5 +25,7 @@ else
     exit 1
 fi
 nvm install node
+npm install -g appium
+appium -p 4723 --base-path /wd/hub
 
 # Run the Robot Framework test suite specified in the requirements.txt file
