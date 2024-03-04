@@ -13,7 +13,17 @@ python3 --version
 pip3 list
 pip3 install pytest
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-source "$HOME/.bashrc" 
+# Set NVM directory and source NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Check if NVM is sourced correctly
+if command -v nvm >/dev/null 2>&1; then
+    echo "NVM sourced successfully."
+else
+    echo "Error: NVM not sourced properly."
+    exit 1
+fi
 nvm install node
 
 # Run the Robot Framework test suite specified in the requirements.txt file
